@@ -1,11 +1,10 @@
 package offer;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {2, 7, 11, 15};
-        twoSum solution = new twoSum();
-        System.out.println(Arrays.toString(solution.twoSum(nums,19)));
+        ListNode l1 = new ListNode(2);
+        ListNode l2 = new ListNode(5);
+        addTwoNumbers solution = new addTwoNumbers();
+        solution.addTwoNumbers(l1, l2);
     }
 }
