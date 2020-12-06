@@ -2,7 +2,8 @@ package offer;
 
 public class Main {
     public static void main(String[] args) {
-        isHappy solution = new isHappy();
-        System.out.println(solution.isHappy(19));
+        longestPalindrome solution = new longestPalindrome();
+        String s = "ssss";
+        System.out.println(solution.solution01_dp(s).toCharArray());
     }
 }
