@@ -2,7 +2,7 @@ package offer;
 
 import java.util.HashMap;
 
-class twoSum {
+public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
         if (nums.length < 2)
             return null;

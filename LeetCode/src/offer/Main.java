@@ -1,9 +1,16 @@
 package offer;
 
+import java.io.Console;
+import java.text.DateFormatSymbols;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        longestPalindrome solution = new longestPalindrome();
-        String s = "ssss";
-        System.out.println(solution.solution01_dp(s).toCharArray());
+        String[] weekdayNames = new DateFormatSymbols().getShortWeekdays();
+        //for (String s : weekdayNames) {
+            System.out.println(weekdayNames[0]);
+        //}
+        System.out.printf("", "hello");
     }
 }

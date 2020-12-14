@@ -1,6 +1,12 @@
 package offer;
 
 public class MinArray {
+    /**
+     * @author Junyu Ke
+     * @create date: 27-11-2020
+     * @param nums
+     * @return
+     */
     public int minArray(int[] nums) {
         if(nums.length == 1)
             return nums[0];
