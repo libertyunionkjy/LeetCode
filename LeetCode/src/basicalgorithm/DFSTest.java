@@ -5,7 +5,7 @@ import datastructure.BinaryTree;
 public class DFSTest {
     public static void main(String[] args) {
         BinaryTree tree = initTree();
-        BFS.BFS(tree);
+        DFS.preorderDFS(tree);
     }
 
     public static BinaryTree initTree() {
