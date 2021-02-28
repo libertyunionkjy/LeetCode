@@ -1,19 +1,19 @@
 package basicalgorithm;
 
-import datastructure.BinaryTree;
+import datastructure.TreeNode;
 
 import java.util.Deque;
 import java.util.LinkedList;
 
 public class DFS {
 
-    public static void preorderDFS(BinaryTree tree) {
-        Deque<BinaryTree> stack = new LinkedList<>();
-        BinaryTree pNode = tree;
+    public static void preorderDFS(TreeNode tree) {
+        Deque<TreeNode> stack = new LinkedList<>();
+        TreeNode pNode = tree;
 
         while (pNode != null || !stack.isEmpty()) {
             if (pNode != null) {
-                System.out.print(pNode.data + ", ");
+                System.out.print(pNode.val + ", ");
                 stack.push(pNode);
                 pNode = pNode.left;
             } else {
@@ -23,13 +23,13 @@ public class DFS {
         }
     }
 
-    public static void preorderDFS_bk(BinaryTree tree) {
-        Deque<BinaryTree> stack = new LinkedList<>();
+    public static void preorderDFS_bk(TreeNode tree) {
+        Deque<TreeNode> stack = new LinkedList<>();
         stack.push(tree);
 
         while (!stack.isEmpty()) {
-            BinaryTree tmp = stack.pop();
-            System.out.println(tmp.data);
+            TreeNode tmp = stack.pop();
+            System.out.println(tmp.val);
 
             if (tmp.right != null)
                 stack.push(tmp.right);
@@ -38,9 +38,9 @@ public class DFS {
         }
     }
 
-    public static void inorderDFS(BinaryTree tree) {
-        Deque<BinaryTree> stack = new LinkedList<>();
-        BinaryTree pNode = tree;
+    public static void inorderDFS(TreeNode tree) {
+        Deque<TreeNode> stack = new LinkedList<>();
+        TreeNode pNode = tree;
 
         while (pNode != null || !stack.isEmpty()) {
             if (pNode != null) {
@@ -48,16 +48,16 @@ public class DFS {
                 pNode = pNode.left;
             } else {
                 pNode = stack.pop();
-                System.out.print(pNode.data + ", ");
+                System.out.print(pNode.val + ", ");
                 pNode = pNode.right;
             }
         }
     }
 
-    public static void postorderDFS(BinaryTree tree) {
-        Deque<BinaryTree> stack = new LinkedList<>();
-        Deque<BinaryTree> ostack = new LinkedList<>();
-        BinaryTree pNode = tree;
+    public static void postorderDFS(TreeNode tree) {
+        Deque<TreeNode> stack = new LinkedList<>();
+        Deque<TreeNode> ostack = new LinkedList<>();
+        TreeNode pNode = tree;
 
         while (pNode != null || !stack.isEmpty()) {
             if (pNode != null) {
@@ -71,16 +71,16 @@ public class DFS {
         }
 
         while (!ostack.isEmpty()) {
-            System.out.print(ostack.pop().data + ", ");
+            System.out.print(ostack.pop().val + ", ");
         }
     }
 
     //递归
-    public static void preOrderDFS(BinaryTree tree){
+    public static void preOrderDFS(TreeNode tree){
         if(tree == null){
             return;
         }
-        System.out.print(tree.data + ", ");
+        System.out.print(tree.val + ", ");
         preOrderDFS(tree.left);
         preOrderDFS(tree.right);
     }

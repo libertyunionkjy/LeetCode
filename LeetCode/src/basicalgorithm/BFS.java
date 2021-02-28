@@ -1,22 +1,22 @@
 package basicalgorithm;
 
-import datastructure.BinaryTree;
+import datastructure.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class BFS {
-    public static void BFS(BinaryTree tree) {
+    public static void BFS(TreeNode tree) {
         if(tree == null){
             return;
         }
 
-        Queue<BinaryTree> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(tree);
 
         while(!queue.isEmpty()){
-            BinaryTree pNode = queue.remove();
-            System.out.print(pNode.data + ", ");
+            TreeNode pNode = queue.remove();
+            System.out.print(pNode.val + ", ");
 
             if(pNode.left != null)
                 queue.add(pNode.left);

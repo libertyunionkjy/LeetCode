@@ -1,23 +1,23 @@
 package basicalgorithm;
 
-import datastructure.BinaryTree;
+import datastructure.TreeNode;
 
 public class DFSTest {
     public static void main(String[] args) {
-        BinaryTree tree = initTree();
+        TreeNode tree = initTree();
         DFS.preorderDFS(tree);
     }
 
-    public static BinaryTree initTree() {
-        BinaryTree node1 = new BinaryTree(1);
-        BinaryTree node2 = new BinaryTree(2);
-        BinaryTree node3 = new BinaryTree(3);
-        BinaryTree node4 = new BinaryTree(4);
-        BinaryTree node5 = new BinaryTree(5);
-        BinaryTree node6 = new BinaryTree(6);
-        BinaryTree node7 = new BinaryTree(7);
-        BinaryTree node8 = new BinaryTree(8);
-        BinaryTree node9 = new BinaryTree(9);
+    public static TreeNode initTree() {
+        TreeNode node1 = new TreeNode(1);
+        TreeNode node2 = new TreeNode(2);
+        TreeNode node3 = new TreeNode(3);
+        TreeNode node4 = new TreeNode(4);
+        TreeNode node5 = new TreeNode(5);
+        TreeNode node6 = new TreeNode(6);
+        TreeNode node7 = new TreeNode(7);
+        TreeNode node8 = new TreeNode(8);
+        TreeNode node9 = new TreeNode(9);
 
         node1.left = node2;
         node1.right = node3;
