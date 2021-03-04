@@ -42,9 +42,11 @@ public class FindMedianSortedArrays {
     }
 
     public static void main(String[] args) {
-        FindMedianSortedArrays solu = new FindMedianSortedArrays();
-        int[] nums1 = {0,2,4,6,8,9};
-        int[] nums2 = {1,3,5,7};
-        System.out.print(solu.findMedianSortedArrays(nums1,nums2));
+//        FindMedianSortedArrays solu = new FindMedianSortedArrays();
+//        int[] nums1 = {0,2,4,6,8,9};
+//        int[] nums2 = {};
+        String a = "abc";
+        
+        System.out.print(a.charAt(1));
     }
 }
