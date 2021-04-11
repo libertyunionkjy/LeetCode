@@ -7,18 +7,14 @@ import datastructure.ListNode;
 
 public class ReverseList {
     public ListNode reverseList(ListNode head) {
-        if(head == null)
-            return null;
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode p = head;
-        while(p.next != null){
-            ListNode tmp =p.next;
-            p.next = tmp.next;
-            dummy.next = tmp;
-            tmp.next = head;
-            head = tmp;
+        ListNode pre = null;
+        ListNode cur = head;
+        while(cur!=null){
+            ListNode tmp = cur.next;
+            cur.next=pre;
+            pre=cur;
+            cur=tmp;
         }
-        return dummy.next;
+        return pre;
     }
 }
