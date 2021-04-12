@@ -85,5 +85,32 @@ public class ReverseList {
         start.next = successor;
         return dummyNode.next;
     }
+    /**
+     * K个一组翻转链表
+     */
+    //反转a到b之间的列表，左闭右开
+    ListNode reverseAB(ListNode a, ListNode b){
+        ListNode pre = null, cur = a, next;
+        while(cur != b){
+            next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
+    }
+    //递归处理
+    public ListNode reverseKGroup(ListNode head, int k){
+        ListNode a = head,b = head;
+        for (int i = 0; i < k; i++) {
+            //这里的if判断必须要加在b=b.next之前，如果加在之后的话，当k刚好等于链表长度时也会直接返回
+            if(b == null)
+                return head;
+            b = b.next;
+        }
+        ListNode newhead = reverseAB(a,b);
+        a.next = reverseKGroup(b,k);
+        return newhead;
+    }
 }
 
