@@ -86,7 +86,7 @@ public class ReverseList {
         return dummyNode.next;
     }
     /**
-     * K个一组翻转链表
+     * 25.K个一组翻转链表
      */
     //反转a到b之间的列表，左闭右开
     ListNode reverseAB(ListNode a, ListNode b){

@@ -1,41 +1,33 @@
+package exam;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Main{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Map<Character,Integer> map = new TreeMap<>();
-        while(sc.hasNextLine()){
-            String str = sc.nextLine();
-            char team1 = str.charAt(0);
-            char team2 = str.charAt(2);
-            if(!map.containsKey(team1)){
-                map.put(team1,0);
-            }
-            if(!map.containsKey(team2)){
-                map.put(team2,0);
-            }
-            int num1 = str.charAt(4) - '0';
-            int num2 = str.charAt(6) - '0';
-            if(num1 > num2){
-                int value = map.get(team1);
-                map.put(team1,value+3);
-            }else if(num1 == num2){
-                int value1 = map.get(team1);
-                int value2 = map.get(team2);
-                map.put(team1,value1+1);
-                map.put(team2,value2+1);
-            }else{
-                int value = map.get(team2);
-                map.put(team2,value+3);
-            }
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+        executor.submit(new Task("task1"));
+        executor.submit(new Task("task2"));
+        executor.submit(new Task("task3"));
+        executor.shutdown();
+    }
+
+}
+class Task implements Runnable{
+    private final String name;
+    Task(String name){
+        this.name = name;
+    }
+
+    @Override
+    public void run() {
+        System.out.println("start " + name);
+        try{
+            Thread.sleep(10000);
+        }catch (InterruptedException e){
         }
-        StringBuilder tmp = new StringBuilder();
-        for(Character key : map.keySet()){
-            tmp.append(key + " " + map.get(key) + ",");
-        }
-        String str1 = tmp.toString();
-        System.out.print(str1.substring(0, str1.length() - 1));
+        System.out.println("end task " + name);
     }
 }
