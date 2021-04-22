@@ -17,7 +17,7 @@ public class SerializeAndDeSerializeForBinaryTree297 {
 
     public String serialize(TreeNode root) {
         StringBuilder sb = new StringBuilder();
-        preorderSerialize(root, sb);
+        BFSSerialize(root, sb);
         return sb.toString();
     }
 
@@ -34,11 +34,7 @@ public class SerializeAndDeSerializeForBinaryTree297 {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        LinkedList<String> list = new LinkedList<>();
-        for (String s : data.split(SPLIT)) {
-            list.addLast(s);
-        }
-        return preorderDeserialize(list);
+        return BFSDeserialize(data);
     }
 
     //my method
@@ -83,6 +79,8 @@ public class SerializeAndDeSerializeForBinaryTree297 {
     /**
      * 看一下层序遍历的序列化和反序列化
      */
+
+
     void BFSSerialize(TreeNode root, StringBuilder sb) {
         if (root == null)
             return;
@@ -90,6 +88,7 @@ public class SerializeAndDeSerializeForBinaryTree297 {
         queue.offer(root);
         while (!queue.isEmpty()) {
             TreeNode tmp = queue.poll();
+            //这里把节点值为空放在取出来后比较
             if (tmp == null) {
                 sb.append(NULL).append(SPLIT);
                 continue;
@@ -100,4 +99,38 @@ public class SerializeAndDeSerializeForBinaryTree297 {
             queue.offer(tmp.right);
         }
     }
+
+    TreeNode BFSDeserialize(String data){
+        if (data.isEmpty())
+            return null;
+
+        String[] notes = data.split(SPLIT);
+        TreeNode root = new TreeNode(Integer.parseInt(notes[0]));
+
+        //queue队列存放的是父节点
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        for (int i = 1; i < notes.length;) {
+            TreeNode parent = queue.poll();
+            String left = notes[i++];
+            //处理左节点
+            if(left.equals(NULL)){
+                parent.left = null;
+            }else{
+                parent.left = new TreeNode(Integer.parseInt(left));
+                queue.offer(parent.left);
+            }
+            //处理右节点
+            String right = notes[i++];
+            if(left.equals(NULL)){
+                parent.right = null;
+            }else{
+                parent.right = new TreeNode(Integer.parseInt(right));
+                queue.offer(parent.right);
+            }
+        }
+        return root;
+    }
+
 }
