@@ -1,8 +1,11 @@
 package LeetCode;
 
+import sun.awt.image.ImageWatched;
+
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;*
+import java.util.LinkedList;
+import java.util.List;
 
 interface NestedInteger {
 
@@ -19,17 +22,15 @@ interface NestedInteger {
  }
 
 public class NestedIterator341 {
-    public class NestedIterator implements Iterator<Integer> {
+    public class NestedIteratorBFS implements Iterator<Integer> {
         private Iterator<Integer> it;
-        public NestedIterator(List<NestedInteger> nestedList) {
+        public NestedIteratorBFS(List<NestedInteger> nestedList) {
             List<Integer> res = new ArrayList<>();
             for(NestedInteger ne : nestedList){
                 traverse(ne,res);
             }
             this.it = res.listIterator();
         }
-
-
 
         @Override
         public Integer next() {
@@ -50,5 +51,33 @@ public class NestedIterator341 {
                 }
             }
         }
+    }
+
+    /**
+     * 优化
+     */
+}
+class NestedIterator implements Iterator<Integer> {
+    private LinkedList<NestedInteger> element;
+
+    public NestedIterator(List<NestedInteger> nestedList) {
+        this.element = new LinkedList<>(nestedList);
+    }
+
+    @Override
+    public Integer next() {
+        return element.removeFirst().getInteger();
+    }
+
+    @Override
+    public boolean hasNext() {
+        while(!element.isEmpty() && !element.get(0).isInteger()){
+             List<NestedInteger> first = element.getFirst().getList();
+             element.removeFirst();
+            for (int i = first.size() - 1; i >= 0 ; i--) {
+                element.addFirst(first.get(i));
+            }
+        }
+        return !element.isEmpty();
     }
 }
