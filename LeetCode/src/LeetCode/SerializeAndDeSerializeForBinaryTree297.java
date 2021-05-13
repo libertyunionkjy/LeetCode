@@ -12,7 +12,7 @@ public class SerializeAndDeSerializeForBinaryTree297 {
      * 二叉树的前序遍历进行序列化和反序列化
      */
     // Encodes a tree to a single string.
-    String NULL = "#";
+    String NULL = "null";
     String SPLIT = ",";
 
     public String serialize(TreeNode root) {
@@ -123,7 +123,7 @@ public class SerializeAndDeSerializeForBinaryTree297 {
             }
             //处理右节点
             String right = notes[i++];
-            if(left.equals(NULL)){
+            if(right.equals(NULL)){
                 parent.right = null;
             }else{
                 parent.right = new TreeNode(Integer.parseInt(right));
