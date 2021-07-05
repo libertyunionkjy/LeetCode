@@ -1,10 +1,19 @@
 package exam;
+<<<<<<< HEAD
 
 import java.util.Scanner;
 import java.util.TreeSet;
+=======
+import java.util.Map;
+import java.util.Scanner;
+import java.util.TreeMap;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+>>>>>>> 3ae085fb41c815348a57f133075d0e17303a7c7f
 
 public class Main {
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
         TreeSet<String> set = new TreeSet<>();
@@ -19,5 +28,29 @@ public class Main {
             }
             i++;
         }
+=======
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+        executor.submit(new Task("task1"));
+        executor.submit(new Task("task2"));
+        executor.submit(new Task("task3"));
+        executor.shutdown();
+    }
+
+}
+class Task implements Runnable{
+    private final String name;
+    Task(String name){
+        this.name = name;
+    }
+
+    @Override
+    public void run() {
+        System.out.println("start " + name);
+        try{
+            Thread.sleep(10000);
+        }catch (InterruptedException e){
+        }
+        System.out.println("end task " + name);
+>>>>>>> 3ae085fb41c815348a57f133075d0e17303a7c7f
     }
 }
