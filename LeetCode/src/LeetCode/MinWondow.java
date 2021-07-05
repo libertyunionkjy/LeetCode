@@ -1,8 +1,33 @@
-package main;
+package LeetCode;
 
-import java.util.*;
+import java.util.HashMap;
 
-public class daily {
+/**
+ * url:https://leetcode-cn.com/problems/minimum-window-substring/
+ * tag：滑动窗口
+ *
+ * //注意target中是可能重复的
+ * //left,right   左闭右开
+ * //hashmap<Character,Integer> window,target
+ * //valid
+ * //right++:
+ * //          1.right  target中没有
+ * //          2.target中有但是window中已经有了
+ * //          3.target中有且window中还没有--->valid++
+ * //valid等于target.size结束
+ * //left++:
+ * //          1.target中没有
+ * //          2.target中有但是window中还有
+ * //          3.target中有且window中没有了--->更新结果, valid--
+ * //valid--后结束
+ * //特殊情况：
+ * //1.如果right到头了但是找不到匹配的
+ *
+ * 坑：Integer比较要使用equals方法(https://www.jianshu.com/p/9cb9c61b0986)
+ * 资源：阿里巴巴开发手册(https://developer.aliyun.com/special/tech-java)
+ */
+
+public class MinWondow {
     public String minWindow(String s, String t) {
         if(t.length() == 0){
             return "";
@@ -76,8 +101,5 @@ public class daily {
             }
         }
         return res;
-    }
-
-    public static void main(String[] args) {
     }
 }

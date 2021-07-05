@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a2b85e79-36f2-48d9-b554-877acf681fc6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JavaSE/src/main/daily.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/LeetCode/CheckInclusion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/LeetCode/MinWondow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/src/exam/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSE/src/ThreadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSE/src/ThreadTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/src/LeetCode/FindMedianSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/src/LeetCode/FindMedianSortedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/FindMedianSortedArrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/LeetCode/FindMedianSortedArrays.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lMrWtot5Oi6G4FOsa1kVz8n8MB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.ThreadTest">
+    <configuration name="CheckInclusion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LeetCode.CheckInclusion" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LeetCode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="LeetCode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam.Main" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadTest" />
+      <module name="JavaSE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="daily" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.daily" />
+      <module name="JavaSE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ThreadTest" />
+        <item itemvalue="Application.CheckInclusion" />
+        <item itemvalue="Application.daily" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2b85e79-36f2-48d9-b554-877acf681fc6" name="Default Changelist" comment="" />
+      <created>1607417835985</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607417835985</updated>
+      <workItem from="1607417837197" duration="6681000" />
+      <workItem from="1607590311142" duration="5028000" />
+      <workItem from="1607913347400" duration="14085000" />
+      <workItem from="1608271999549" duration="3592000" />
+      <workItem from="1609729012190" duration="1207000" />
+      <workItem from="1611560641092" duration="57000" />
+      <workItem from="1614137008879" duration="11030000" />
+      <workItem from="1614662948218" duration="19526000" />
+      <workItem from="1616476556813" duration="784000" />
+      <workItem from="1617178729889" duration="12606000" />
+      <workItem from="1617250464659" duration="4262000" />
+      <workItem from="1617764049618" duration="16028000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1617937851242">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/-2560.0.2048.1112@0.0.1280.680" timestamp="1617937851242" />
+    <state x="-1880" y="120" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1614141483751">
+      <screen x="-2560" y="-361" width="2048" height="1112" />
+    </state>
+    <state x="-1880" y="120" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@-2560.-361.2048.1112" timestamp="1614141483751" />
+    <state width="1237" height="194" key="GridCell.Tab.0.bottom" timestamp="1617938335809">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="2005" height="346" key="GridCell.Tab.0.bottom/0.0.1280.680/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1617788536221" />
+    <state width="1237" height="194" key="GridCell.Tab.0.bottom/0.0.1280.680/-2560.0.2048.1112@0.0.1280.680" timestamp="1617938335809" />
+    <state width="2005" height="116" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@-2560.-361.2048.1112" timestamp="1616477343498" />
+    <state width="1237" height="100" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@0.0.1280.680" timestamp="1617243760558" />
+    <state width="1237" height="100" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617194887541" />
+    <state width="2005" height="123" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1615208044263" />
+    <state width="1237" height="194" key="GridCell.Tab.0.center" timestamp="1617938335809">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="2005" height="346" key="GridCell.Tab.0.center/0.0.1280.680/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1617788536221" />
+    <state width="1237" height="194" key="GridCell.Tab.0.center/0.0.1280.680/-2560.0.2048.1112@0.0.1280.680" timestamp="1617938335809" />
+    <state width="2005" height="116" key="GridCell.Tab.0.center/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@-2560.-361.2048.1112" timestamp="1616477343498" />
+    <state width="1237" height="100" key="GridCell.Tab.0.center/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@0.0.1280.680" timestamp="1617243760558" />
+    <state width="1237" height="100" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1617194887541" />
+    <state width="2005" height="123" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1615208044262" />
+    <state width="1237" height="194" key="GridCell.Tab.0.left" timestamp="1617938335808">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="2005" height="346" key="GridCell.Tab.0.left/0.0.1280.680/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1617788536221" />
+    <state width="1237" height="194" key="GridCell.Tab.0.left/0.0.1280.680/-2560.0.2048.1112@0.0.1280.680" timestamp="1617938335808" />
+    <state width="2005" height="116" key="GridCell.Tab.0.left/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@-2560.-361.2048.1112" timestamp="1616477343498" />
+    <state width="1237" height="100" key="GridCell.Tab.0.left/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@0.0.1280.680" timestamp="1617243760558" />
+    <state width="1237" height="100" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1617194887540" />
+    <state width="2005" height="123" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1615208044261" />
+    <state width="1237" height="194" key="GridCell.Tab.0.right" timestamp="1617938335809">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="2005" height="346" key="GridCell.Tab.0.right/0.0.1280.680/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1617788536221" />
+    <state width="1237" height="194" key="GridCell.Tab.0.right/0.0.1280.680/-2560.0.2048.1112@0.0.1280.680" timestamp="1617938335809" />
+    <state width="2005" height="116" key="GridCell.Tab.0.right/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@-2560.-361.2048.1112" timestamp="1616477343498" />
+    <state width="1237" height="100" key="GridCell.Tab.0.right/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@0.0.1280.680" timestamp="1617243760558" />
+    <state width="1237" height="100" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1617194887541" />
+    <state width="2005" height="123" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1615208044262" />
+    <state width="2005" height="346" key="GridCell.Tab.1.bottom" timestamp="1617788536222">
+      <screen x="-2560" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="346" key="GridCell.Tab.1.bottom/0.0.1280.680/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1617788536222" />
+    <state width="2005" height="123" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@-2560.-361.2048.1112" timestamp="1614827766278" />
+    <state width="1237" height="187" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@0.0.1280.680" timestamp="1617243757856" />
+    <state width="1237" height="187" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1617192910578" />
+    <state width="2005" height="123" key="GridCell.Tab.1.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1615208044265" />
+    <state width="2005" height="346" key="GridCell.Tab.1.center" timestamp="1617788536221">
+      <screen x="-2560" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="346" key="GridCell.Tab.1.center/0.0.1280.680/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1617788536221" />
+    <state width="2005" height="123" key="GridCell.Tab.1.center/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@-2560.-361.2048.1112" timestamp="1614827766278" />
+    <state width="1237" height="187" key="GridCell.Tab.1.center/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@0.0.1280.680" timestamp="1617243757855" />
+    <state width="1237" height="187" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1617192910577" />
+    <state width="2005" height="123" key="GridCell.Tab.1.center/0.0.2048.1112@0.0.2048.1112" timestamp="1615208044264" />
+    <state width="2005" height="346" key="GridCell.Tab.1.left" timestamp="1617788536221">
+      <screen x="-2560" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="346" key="GridCell.Tab.1.left/0.0.1280.680/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1617788536221" />
+    <state width="2005" height="123" key="GridCell.Tab.1.left/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@-2560.-361.2048.1112" timestamp="1614827766278" />
+    <state width="1237" height="187" key="GridCell.Tab.1.left/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@0.0.1280.680" timestamp="1617243757855" />
+    <state width="1237" height="187" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1617192910577" />
+    <state width="2005" height="123" key="GridCell.Tab.1.left/0.0.2048.1112@0.0.2048.1112" timestamp="1615208044263" />
+    <state width="2005" height="346" key="GridCell.Tab.1.right" timestamp="1617788536222">
+      <screen x="-2560" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="346" key="GridCell.Tab.1.right/0.0.1280.680/-2560.0.2048.1112@-2560.0.2048.1112" timestamp="1617788536222" />
+    <state width="2005" height="123" key="GridCell.Tab.1.right/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@-2560.-361.2048.1112" timestamp="1614827766278" />
+    <state width="1237" height="187" key="GridCell.Tab.1.right/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@0.0.1280.680" timestamp="1617243757855" />
+    <state width="1237" height="187" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1617192910577" />
+    <state width="2005" height="123" key="GridCell.Tab.1.right/0.0.2048.1112@0.0.2048.1112" timestamp="1615208044264" />
+    <state x="91" y="0" key="new project wizard" timestamp="1617251119304">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680/1920.-607.1050.1640/-2560.-361.2048.1112@0.0.1280.680" timestamp="1617251119304" />
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1617178792428" />
+    <state x="429" y="149" width="672" height="415" key="search.everywhere.popup" timestamp="1617783862891">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="429" y="149" width="672" height="415" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1617783862891" />
+    <state x="-1873" y="-118" width="672" height="678" key="search.everywhere.popup/1920.-607.1050.1620/-2560.-361.2048.1112/0.0.1280.680@-2560.-361.2048.1112" timestamp="1617774691527" />
+  </component>
+</project>
